@@ -9,7 +9,9 @@ let level = 0;
 $(document).keydown(function() {
   if(!started){
     $("#level-title").text(`Level ${level}`);
-    nextSequence();
+    setTimeout(function () {
+      nextSequence();
+    }, 1000);
     started = true;
   }
 })
